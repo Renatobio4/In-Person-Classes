@@ -1,7 +1,7 @@
 import base64
 from openai import OpenAI
 
-key = 'YOUR API KEY'
+key = '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'
 
 client = OpenAI(api_key=key)
 
@@ -22,7 +22,7 @@ response = client.responses.create(
         {
             "role": "user",
             "content": [
-                { "type": "input_text", "text": "what's in this image?" },
+                { "type": "input_text", "text": "what kind of dog is this - answer in one word?" },
                 {
                     "type": "input_image",
                     "image_url": f"data:image/jpeg;base64,{base64_image}",

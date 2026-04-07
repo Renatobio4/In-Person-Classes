@@ -2,13 +2,13 @@ from openai import OpenAI
 import requests
 import time
 
-key = 'YOUR API KEY'
+key = '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'
 
 client = OpenAI(api_key=key)
 
 result = client.images.generate(
     model="dall-e-3",
-    prompt="A person riding a cat",
+    prompt="A person riding a cat while they eat a taco",
     size="1024x1024"
 )
 
